@@ -26,7 +26,7 @@ print(SECRET_KEY)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = str(os.environ.get('DEBUG')) == '1' #1 == True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['murmuring-island-18264-c6c1e9a94413.herokuapp.com', '127.0.0.1']
 if not DEBUG:
     ALLOWED_HOSTS += [os.environ.get('DJANGO_ALLOWED_HOST')]
 
